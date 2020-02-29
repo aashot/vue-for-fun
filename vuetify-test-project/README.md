@@ -1,4 +1,4 @@
-# vuerify
+# vuetify
 
 ## Project setup
 ```
