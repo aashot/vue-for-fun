@@ -17,7 +17,7 @@
 
           <ul id="dropdown" class="dropdown-content">
             <li>
-              <router-link to="/profile" class="black-text">
+              <router-link :to="{ name: 'profile' }" class="black-text">
                 <i class="material-icons">account_circle</i>Профиль
               </router-link>
             </li>
@@ -65,7 +65,7 @@ export default {
 
   methods: {
     logout() {
-      this.$router.push("/login?message=logout");
+      this.$router.push({ name: "login", query: { message: "logout" } });
     }
   }
 };
